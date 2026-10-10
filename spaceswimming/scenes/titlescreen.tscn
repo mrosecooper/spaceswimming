@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://b2acpgftoxhwb"]
+
+[ext_resource type="Texture2D" uid="uid://y12r4n74bi5e" path="res://IMG_2460.png" id="1_cjnew"]
+
+[node name="titlescreen" type="Node2D" unique_id=15039445]
+
+[node name="background" type="TextureRect" parent="." unique_id=2977146]
+offset_top = 1.0000002
+offset_right = 2360.0
+offset_bottom = 1641.0
+scale = Vector2(0.48812827, 0.39516047)
+texture = ExtResource("1_cjnew")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=471557365]
+offset_left = 438.0
+offset_top = 269.00003
+offset_right = 604.0
+offset_bottom = 313.00003
+scale = Vector2(1.7858464, 2.3822794)
+
+[node name="start" type="Button" parent="VBoxContainer" unique_id=827536934]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.49019608, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0.4862745, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "START GAME"
+
+[node name="settings" type="Button" parent="VBoxContainer" unique_id=1148868308]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.49019608, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0.4862745, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "SETTINGS"
+
+[node name="leave" type="Button" parent="VBoxContainer" unique_id=1022322818]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.49019608, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0.4862745, 1)
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "LEAVE"
