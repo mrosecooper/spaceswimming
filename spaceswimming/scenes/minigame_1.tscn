@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dhfrhsndsdu43"]
+
+[ext_resource type="Texture2D" uid="uid://c40ulp2j7v8oc" path="res://IMG_2464.png" id="1_tk6fs"]
+[ext_resource type="PackedScene" uid="uid://cpubaq17epfjk" path="res://scenes/player.tscn" id="2_og05i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bng7q"]
+size = Vector2(942.69635, 110.8248)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjdme"]
+size = Vector2(99.968475, 20)
+
+[node name="minigame1" type="Node2D" unique_id=1760531319]
+
+[node name="scroller" type="Parallax2D" parent="." unique_id=511297073]
+repeat_size = Vector2(1000, 0)
+
+[node name="background" type="TextureRect" parent="scroller" unique_id=1379376036]
+offset_right = 2360.0
+offset_bottom = 1640.0
+scale = Vector2(0.48789275, 0.39413303)
+texture = ExtResource("1_tk6fs")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=269439775]
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=107767698]
+offset_left = -1.0
+offset_top = 651.0
+offset_right = 39.0
+offset_bottom = 691.0
+scale = Vector2(28.792643, -1.9659212)
+color = Color(0.86747736, 0.68658215, 0.50143415, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1413436051]
+position = Vector2(576, 613.00006)
+scale = Vector2(1.2241482, 0.73783195)
+shape = SubResource("RectangleShape2D_bng7q")
+
+[node name="player" parent="." unique_id=925497640 instance=ExtResource("2_og05i")]
+position = Vector2(-72, 372)
+scale = Vector2(0.43172202, 0.40392506)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=82030438]
+position = Vector2(324.2827, 321.84192)
+scale = Vector2(-1.8355302, 17.263666)
+shape = SubResource("RectangleShape2D_wjdme")

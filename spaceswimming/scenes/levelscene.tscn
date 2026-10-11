@@ -1,3 +1,63 @@
-[gd_scene format=3 uid="uid://b0xjp8fvdr41u"]
+[gd_scene format=3 uid="uid://juptumr2e2c0"]
 
-[node name="levelscene" type="Node2D" unique_id=1985564663]
+[ext_resource type="Script" uid="uid://cjsqv0v48lcpi" path="res://timerscreen.gd" id="1_mykrr"]
+[ext_resource type="Texture2D" uid="uid://dr8jjsbqoab73" path="res://loading level thing.png" id="2_kpjlj"]
+[ext_resource type="Texture2D" uid="uid://d2aligaa75ot0" path="res://good heart.png" id="3_rshmy"]
+
+[node name="timerscreen" type="Node2D" unique_id=1985564663]
+script = ExtResource("1_mykrr")
+
+[node name="background" type="TextureRect" parent="." unique_id=1681610534]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.48625138, 0.39156672)
+texture = ExtResource("2_kpjlj")
+
+[node name="starcontainer2" type="HBoxContainer" parent="." unique_id=2028928200]
+offset_left = 210.0
+offset_top = 159.00002
+offset_right = 10466.0
+offset_bottom = 2207.0
+scale = Vector2(0.06818927, 0.07749891)
+
+[node name="star" type="TextureRect" parent="starcontainer2" unique_id=2096710830]
+layout_mode = 2
+texture = ExtResource("3_rshmy")
+
+[node name="star2" type="TextureRect" parent="starcontainer2" unique_id=1498494698]
+layout_mode = 2
+texture = ExtResource("3_rshmy")
+
+[node name="star3" type="TextureRect" parent="starcontainer2" unique_id=2142036338]
+layout_mode = 2
+texture = ExtResource("3_rshmy")
+
+[node name="star4" type="TextureRect" parent="starcontainer2" unique_id=1922426278]
+layout_mode = 2
+texture = ExtResource("3_rshmy")
+
+[node name="star5" type="TextureRect" parent="starcontainer2" unique_id=868090644]
+layout_mode = 2
+texture = ExtResource("3_rshmy")
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=578741359]
+offset_left = 514.0
+offset_top = 440.99997
+offset_right = 577.4674
+offset_bottom = 500.9337
+scale = Vector2(1.6444031, 1.1063763)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"
+
+[node name="level" type="RichTextLabel" parent="." unique_id=206768879]
+offset_left = 452.0
+offset_top = 345.0
+offset_right = 599.2838
+offset_bottom = 406.9256
+rotation = 0.0050833584
+scale = Vector2(1.5932926, 1.1399045)
+theme_override_font_sizes/normal_font_size = 42
+text = "Level #"
+fit_content = true
+scroll_active = false
